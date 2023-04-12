@@ -26,7 +26,8 @@ public class Server {
                 }
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Не могу стартовать сервер");
+            e.printStackTrace();
         }
     }
 
